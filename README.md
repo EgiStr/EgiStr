@@ -1,5 +1,5 @@
 <div align=center>
-        <img src="https://readme-typing-svg.herokuapp.com?color=%236FDA44&size=32&center=true&vCenter=true&width=500&height=200&lines=Hello+World!;I'm+Eggi+Satria;Backend+Engineering;Data+Scientist" alt="Headline" />
+        <img src="https://readme-typing-svg.herokuapp.com?color=%236FDA44&size=32&center=true&vCenter=true&width=500&height=200&lines=Hello+World!;I'm+Eggi+Satria;Backend+Engineer;Data+Scientist" alt="Headline" />
 </div>
 
 <p align="center">
@@ -12,7 +12,7 @@
 <hr>
 <p align="center">
   <em>
-    Hello, I am Eggi Satria a undergraduate from <a href="https://itera.ac.id/"> <b>Insitut Teknologi Sumatera </b> Indonesia</a>.<br>
+    Hello, I am Eggi Satria a undergraduate from <a href="https://itera.ac.id/"> <b>Institut Teknologi Sumatera </b> Indonesia</a>.<br>
     <b>Data Scientist</b> Student <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> who is passionate about <b>Machine Learning</b> and <b>Backend Engineer</b>.<br>
   </em>
 </p>
