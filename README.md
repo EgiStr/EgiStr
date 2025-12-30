@@ -1,33 +1,75 @@
-<div align=center>
-        <img src="https://readme-typing-svg.herokuapp.com?color=%236FDA44&size=32&center=true&vCenter=true&width=500&height=200&lines=Hello+World!;I'm+Eggi+Satria;Backend+Engineer;Data+Scientist" alt="Headline" />
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%236FDA44&size=32&center=true&vCenter=true&width=500&height=200&lines=Hello+World!;I'm+Eggi+Satria;Backend+Engineer;Data+Scientist" alt="Headline" />
 </div>
 
 <p align="center">
- <p align="center">
-<img src="https://img.shields.io/badge/Age-20-red" />
+  <img src="https://img.shields.io/badge/Age-22-red" />
   <img src="https://img.shields.io/badge/Focus-Data Science-brightgreen" />
   <img src="https://img.shields.io/badge/Lives-Indonesia-success" />
   <img src="https://img.shields.io/badge/Languages-Indonesia English-brightgreen" />
 </p>
+
 <hr>
+
 <p align="center">
   <em>
-    Hello, I am Eggi Satria a undergraduate from <a href="https://itera.ac.id/"> <b>Institut Teknologi Sumatera </b> Indonesia</a>.<br>
-    <b>Data Scientist</b> Student <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> who is passionate about <b>Machine Learning</b> and <b>Backend Engineer</b>.<br>
+    Hello, I am Eggi Satria, an undergraduate from <a href="https://itera.ac.id/"><b>Institut Teknologi Sumatera</b></a> in Indonesia.<br>
+    A <b>Data Scientist</b> student <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> passionate about <b>Machine Learning</b> and <b>Backend Engineering</b>.<br>
   </em>
 </p>
 
-  <hr>
-  <p align="center">
- <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30px" alt="Git"/>&nbsp;<i><b>Git Activeness</b></i></p>
+<hr>
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=EgiStr&show_icons=true&theme=chartreuse-dark&locale=en" alt="ovi" />
+  <i><b>🚀 Fun Fact: I love exploring new technologies and contributing to open-source projects!</b></i>
 </p>
+
+<hr>
+
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=EgiStr&theme=chartreuse-dark" alt="ovi" />
+  <img src="https://komarev.com/ghpvc/?username=EgiStr&label=Profile%20Views&color=brightgreen&style=flat" alt="Profile Views" />
 </p>
+
+## 🛠️ Tech Stack
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=EgiStr&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark" alt="ovi" />
+  <img src="https://skillicons.dev/icons?i=python,php,laravel,js,nodejs,react,docker,git,mysql,postgres,mongodb,linux,vscode,github" alt="Tech Stack" />
+</p>
+
+<hr>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30px" alt="Git"/> <i><b>Git Activity</b></i>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=EgiStr&show_icons=true&theme=chartreuse-dark&locale=en" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=EgiStr&theme=chartreuse-dark" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=EgiStr&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark" alt="Top Languages" />
+</p>
+
+## 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=EgiStr&theme=darkhub&no-frame=false&no-bg=false&margin-w=4&column=7" alt="GitHub Trophies" />
+</p>
+
+## 🐍 Contribution Graph
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EgiStr/EgiStr/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
+</p>
+
+## 💭 Random Dev Quote
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Random Dev Quote" />
 </p>
 
 <hr>
@@ -36,7 +78,6 @@
   <i><b>Let's connect and chat! Open to anyone on Earth under the Sun and Moon!</b></i>
 </p>
 
-<!-- TIMESTAMP -->
 
 <p align="center">
   <a href="https://www.linkedin.com/in/eggisatria">
@@ -45,5 +86,6 @@
   <a href="https://www.instagram.com/_egistr/">
     <img src="https://img.shields.io/badge/-@_egistr-E4405F?style=flat&logo=Instagram&logoColor=white" />
   </a>
-  
 </p>
+
+<!-- TIMESTAMP -->
