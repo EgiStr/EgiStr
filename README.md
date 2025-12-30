@@ -36,6 +36,8 @@
   <i><b>Let's connect and chat! Open to anyone on Earth under the Sun and Moon!</b></i>
 </p>
 
+<!-- TIMESTAMP -->
+
 <p align="center">
   <a href="https://www.linkedin.com/in/eggisatria">
     <img src="https://img.shields.io/badge/-Eggi%20Satria-blue?style=flat&logo=Linkedin&logoColor=white" />
