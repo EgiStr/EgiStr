@@ -63,6 +63,7 @@
 ## 📊 GitHub Activity
 
 <!--START_SECTION:activity-->
+1. 💪 Opened PR [#1](undefined) in [diosamuel/finara-mvp](https://github.com/diosamuel/finara-mvp)
 <!--END_SECTION:activity-->
 
 <p align="center">
