@@ -43,30 +43,36 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=EgiStr&show_icons=true&theme=chartreuse-dark&locale=en" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=EgiStr&show_icons=true&theme=dark&locale=en" alt="GitHub Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=EgiStr&theme=chartreuse-dark" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=EgiStr&theme=dark" alt="GitHub Streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=EgiStr&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=EgiStr&theme=dark&layout=compact" alt="Wakatime Stats" />
 </p>
-
-## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=EgiStr&theme=darkhub&no-frame=false&no-bg=false&margin-w=4&column=7" alt="GitHub Trophies" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=EgiStr&show_icons=true&locale=en&layout=compact&theme=dark" alt="Top Languages" />
 </p>
 
-## 🐍 Contribution Graph
+## 📊 GitHub Activity
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/EgiStr/EgiStr/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EgiStr&theme=react-dark&hide_border=true" alt="GitHub Activity Graph" />
 </p>
 
-## 💭 Random Dev Quote
+## 🎯 Key Stats
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Total%20Contributions-500%2B-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/Repositories-20%2B-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Followers-100%2B-orange?style=flat-square" />
+</p>
+
+##  Random Dev Quote
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Random Dev Quote" />
