@@ -46,15 +46,6 @@
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=EgiStr&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats" />
 </p>
 
-<!-- Streak Stats (Currently Down)
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=EgiStr&theme=dark&hide_border=true" alt="GitHub Streak" />
-</p>
--->
-
-<!-- WakaTime Stats (Requires Public Profile & Secret) -->
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
 
 <p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs?username=EgiStr&show_icons=true&locale=en&layout=compact&theme=dark&hide_border=true" alt="Top Languages" />
@@ -65,6 +56,7 @@
 <!--START_SECTION:activity-->
 1. 💪 Opened PR [#1](undefined) in [diosamuel/finara-mvp](https://github.com/diosamuel/finara-mvp)
 <!--END_SECTION:activity-->
+<hr>
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=EgiStr&theme=react-dark&hide_border=true" alt="GitHub Activity Graph" />
