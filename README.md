@@ -46,13 +46,15 @@
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=EgiStr&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats" />
 </p>
 
+<!-- Streak Stats (Currently Down)
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=EgiStr&theme=dark&hide_border=true" alt="GitHub Streak" />
 </p>
+-->
 
-<p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/wakatime?username=EgiStr&theme=dark&layout=compact&hide_border=true" alt="Wakatime Stats" />
-</p>
+<!-- WakaTime Stats (Requires Public Profile & Secret) -->
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 <p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs?username=EgiStr&show_icons=true&locale=en&layout=compact&theme=dark&hide_border=true" alt="Top Languages" />
