@@ -62,6 +62,9 @@
 
 ## 📊 GitHub Activity
 
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=EgiStr&theme=react-dark&hide_border=true" alt="GitHub Activity Graph" />
 </p>
@@ -78,6 +81,9 @@
 </p>
 
 
+
+<!--START_SECTION:waka-simple-->
+<!--END_SECTION:waka-simple-->
 
 ##  Random Dev Quote
 
