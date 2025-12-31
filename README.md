@@ -72,6 +72,11 @@
   <img src="https://img.shields.io/badge/Followers-100%2B-orange?style=flat-square" />
 </p>
 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EgiStr/EgiStr/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
+</p>
+
 ##  Random Dev Quote
 
 <p align="center">
