@@ -50,11 +50,9 @@
   <img src="https://streak-stats.demolab.com/?user=EgiStr&theme=dark&hide_border=true" alt="GitHub Streak" />
 </p>
 
-<!-- WakaTime is currently unavailable or not configured
 <p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api/wakatime?username=EgiStr&theme=dark&layout=compact&hide_border=true" alt="Wakatime Stats" />
 </p>
--->
 
 <p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs?username=EgiStr&show_icons=true&locale=en&layout=compact&theme=dark&hide_border=true" alt="Top Languages" />
