@@ -21,7 +21,7 @@
 <hr>
 
 <p align="center">
-  <i><b>🚀 Fun Fact: I love exploring new technologies and contributing to open-source projects!</b></i>
+  <i><b>🚀 Fun Fact: I love exploring new technologies and build application !</b></i>
 </p>
 
 <hr>
