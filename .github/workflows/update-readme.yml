@@ -18,8 +18,8 @@ jobs:
 
       - name: Update timestamp in README
         run: |
-          TIMESTAMP="Last updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-          sed -i "s|<!-- TIMESTAMP -->|$TIMESTAMP|" README.md
+            TIMESTAMP="<center>Updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')</center>"
+            sed -i "s|<!-- TIMESTAMP -->|$TIMESTAMP|" README.md
 
       - name: Commit and push changes
         run: |
