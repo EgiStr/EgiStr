@@ -21,6 +21,13 @@ jobs:
 
     steps:
       # Isometric commit calendar - the signature visual on the profile.
+      #
+      # Only this plugin is used on purpose. `plugin_habits` and
+      # `plugin_activity` were tried and removed: both read the public events
+      # API, which renders "Unexpected error" on accounts whose activity is
+      # mostly private. They produced an empty card rather than failing the
+      # run, so the breakage was silent. Verify any new plugin's SVG actually
+      # contains data before wiring it into the README.
       - name: Isometric commit calendar
         uses: lowlighter/metrics@latest
         with:
@@ -31,23 +38,3 @@ jobs:
           config_timezone: Asia/Jakarta
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-
-      # Recent activity feed across issues, PRs and releases.
-      # NOTE: plugin_habits is deliberately NOT used - it reads the public
-      # events API, which renders "Unexpected error" for accounts whose
-      # activity is mostly private. This covers the same ground and renders.
-      - name: Recent activity
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics.activity.svg
-          template: classic
-          base: ""
-          config_timezone: Asia/Jakarta
-          plugin_activity: yes
-          plugin_activity_limit: 6
-          plugin_activity_days: 30
-          plugin_activity_filter: issue, pr, release, wiki
-          plugin_activity_visibility: all
-          plugin_activity_load: 300
-          plugin_activity_skipped: EgiStr/EgiStr
