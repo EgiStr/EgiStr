@@ -32,24 +32,28 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-      # Coding habits: when the work actually happens + mildly interesting facts.
-      - name: Coding habits and activity
+      # Recent activity feed across issues, PRs and releases.
+      # NOTE: plugin_habits is deliberately NOT used - it reads the public
+      # events API, which renders "Unexpected error" for accounts whose
+      # activity is mostly private. This covers the same ground and renders.
+      - name: Recent activity
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics.habits.svg
+          filename: metrics.activity.svg
           template: classic
           base: ""
           config_timezone: Asia/Jakarta
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: no
-          config_display: large
+          plugin_activity: yes
+          plugin_activity_limit: 6
+          plugin_activity_days: 30
+          plugin_activity_filter: issue, pr, release, wiki
+          plugin_activity_visibility: all
+          plugin_activity_load: 300
+          plugin_activity_skipped: EgiStr/EgiStr
 
-      # Language breakdown run over cloned repositories (more truthful than byte counting).
-      - name: Languages (in-depth)
+      # Language breakdown run over the repositories themselves.
+      - name: Languages
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -63,6 +67,4 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
-          plugin_languages_indepth: yes
           plugin_languages_ignored: html, css, jupyter notebook, scss
-
