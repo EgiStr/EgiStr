@@ -202,12 +202,15 @@ Reusable skills/tools I built and open-sourced.
 </div>
 ---
 
-## ✍️ Latest Writing
+## 🔬 Currently Exploring
 
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
+<!-- Kept in sync by hand — a short, honest snapshot beats an empty feed. -->
 
-<sub>Auto-updated from my feed by [.github/workflows/latest-content.yml](.github/workflows/latest-content.yml)</sub>
+- **Metric vision** — tightening calibration so pixel→millimetre error stays predictable across shifts
+- **Agent reliability** — measuring when a retrieval pipeline is *actually* grounded, not just fluent
+- **Edge inference** — squeezing real-time throughput out of hardware that was never meant for it
+
+<sub>Updated whenever the work moves. Longer notes land on <a href="https://www.linkedin.com/in/eggisatria">LinkedIn</a>.</sub>
 
 ---
 
