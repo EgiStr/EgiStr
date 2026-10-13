@@ -45,8 +45,7 @@ jobs:
           plugin_habits_from: 200
           plugin_habits_days: 14
           plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          config_padding: 0, 10%
+          plugin_habits_charts: no
           config_display: large
 
       # Language breakdown run over cloned repositories (more truthful than byte counting).
@@ -66,3 +65,4 @@ jobs:
           plugin_languages_details: percentage
           plugin_languages_indepth: yes
           plugin_languages_ignored: html, css, jupyter notebook, scss
+
