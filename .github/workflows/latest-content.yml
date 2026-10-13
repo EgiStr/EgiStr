@@ -1,0 +1,37 @@
+name: Latest Content
+
+on:
+  schedule:
+    - cron: "0 6 * * *"       # daily at 06:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/latest-content.yml"
+
+concurrency:
+  group: latest-content-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Pull the latest writing into the README
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          # Add or remove feeds here; the section updates itself every run.
+          feed_list: "https://medium.com/feed/@egisatria2310"
+          max_post_count: 4
+          feed_name: ""
+          date_format: "mmm dd, yyyy"
+          comment_tag_name: "BLOG-POST-LIST"
+          template: "- [$title]($url) <sub>· $date</sub>"
+          committer_username: "github-actions[bot]"
+          committer_email: "41898282+github-actions[bot]@users.noreply.github.com"
