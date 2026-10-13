@@ -1,30 +1,60 @@
-name: Update README Timestamp
+name: Update README
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily at midnight UTC
-  workflow_dispatch:  # Manual trigger
+    - cron: "0 0 * * *"      # daily at 00:00 UTC
+  workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Update timestamp in README
+      - name: Refresh the timestamp line
+        env:
+          TZ: Asia/Jakarta
         run: |
-            TIMESTAMP="<center>Updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')</center>"
-            sed -i "s|<!-- TIMESTAMP -->|$TIMESTAMP|" README.md
+          set -euo pipefail
 
-      - name: Commit and push changes
+          STAMP="Updated $(date '+%d %b %Y, %H:%M %Z')"
+          echo "stamp: $STAMP"
+
+          python3 - "$STAMP" <<'PY'
+          import pathlib, re, sys
+
+          stamp = sys.argv[1]
+          path = pathlib.Path("README.md")
+          text = path.read_text(encoding="utf-8")
+
+          # Matches BOTH the untouched marker and any previously written
+          # timestamp, so every run is a straight replacement (idempotent -
+          # timestamps never accumulate and a missed run self-heals).
+          pattern = re.compile(r"<sub>(?:<!-- TIMESTAMP -->|Updated [^<]*)</sub>")
+
+          if not pattern.search(text):
+              sys.exit("::error::timestamp anchor not found in README.md")
+
+          path.write_text(pattern.sub(f"<sub>{stamp}</sub>", text, count=1), encoding="utf-8")
+          print(f"README timestamp -> {stamp}")
+          PY
+
+      - name: Commit and push
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          set -euo pipefail
+
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          if git diff --quiet; then
+            echo "README already up to date."
+            exit 0
+          fi
+
           git add README.md
-          git commit --allow-empty -m "Update README timestamp" || echo "No changes to commit"
+          git commit -m "chore: refresh README timestamp"
           git push
