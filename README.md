@@ -9,7 +9,7 @@
 
 <p>
   <a href="https://www.linkedin.com/in/eggisatria"><img src="https://img.shields.io/badge/LinkedIn-Eggi_Satria-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://eggisatria.dev"><img src="https://img.shields.io/badge/Portfolio-eggisatria.dev-6FDA44?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+  <a href="https://github.com/EgiStr/portofolio"><img src="https://img.shields.io/badge/Portfolio-Repository-6FDA44?style=for-the-badge&logo=github&logoColor=black" /></a>
   <img src="https://komarev.com/ghpvc/?username=EgiStr&label=Profile+Views&color=6FDA44&style=for-the-badge" />
 </p>
 
