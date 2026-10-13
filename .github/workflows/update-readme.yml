@@ -2,11 +2,19 @@ name: Update README
 
 on:
   schedule:
-    - cron: "0 0 * * *"      # daily at 00:00 UTC
+    - cron: "0 0 * * *"          # daily at 00:00 UTC
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-readme.yml"
+
+concurrency:
+  group: readme-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  update-readme:
+  timestamp:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -14,6 +22,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Verify the timestamp anchor exists
+        run: |
+          set -euo pipefail
+          if ! grep -qE '<sub>(<!-- TIMESTAMP -->|Updated [^<]*)</sub>' README.md; then
+            echo "::error::Timestamp anchor not found. Expected '<sub><!-- TIMESTAMP --></sub>' in README.md."
+            exit 1
+          fi
+          echo "Anchor OK."
 
       - name: Refresh the timestamp line
         env:
@@ -22,7 +41,7 @@ jobs:
           set -euo pipefail
 
           STAMP="Updated $(date '+%d %b %Y, %H:%M %Z')"
-          echo "stamp: $STAMP"
+          echo "New stamp: $STAMP"
 
           python3 - "$STAMP" <<'PY'
           import pathlib, re, sys
@@ -31,15 +50,23 @@ jobs:
           path = pathlib.Path("README.md")
           text = path.read_text(encoding="utf-8")
 
-          # Matches BOTH the untouched marker and any previously written
-          # timestamp, so every run is a straight replacement (idempotent -
-          # timestamps never accumulate and a missed run self-heals).
+          # Matches the untouched marker AND any previously written timestamp,
+          # so every run is a plain replacement: values never accumulate and a
+          # skipped day self-heals on the next run.
           pattern = re.compile(r"<sub>(?:<!-- TIMESTAMP -->|Updated [^<]*)</sub>")
 
-          if not pattern.search(text):
+          match = pattern.search(text)
+          if not match:
               sys.exit("::error::timestamp anchor not found in README.md")
 
-          path.write_text(pattern.sub(f"<sub>{stamp}</sub>", text, count=1), encoding="utf-8")
+          if match.group(0) == f"<sub>{stamp}</sub>":
+              print("Timestamp already current; no write needed.")
+              sys.exit(0)
+
+          path.write_text(
+              text[: match.start()] + f"<sub>{stamp}</sub>" + text[match.end() :],
+              encoding="utf-8",
+          )
           print(f"README timestamp -> {stamp}")
           PY
 
@@ -51,10 +78,18 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
           if git diff --quiet; then
-            echo "README already up to date."
+            echo "README already up to date - nothing to commit."
             exit 0
           fi
 
           git add README.md
           git commit -m "chore: refresh README timestamp"
           git push
+
+      - name: Summary
+        run: |
+          {
+            echo "### README timestamp refreshed"
+            echo ""
+            echo "The profile footer now reads the current Asia/Jakarta time."
+          } >> "$GITHUB_STEP_SUMMARY"

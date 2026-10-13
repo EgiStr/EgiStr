@@ -2,13 +2,17 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"      # daily at 00:00 UTC
+    - cron: "0 0 * * *"          # daily at 00:00 UTC
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
       - ".github/workflows/snake.yml"
+
+# Only one generation at a time; a queued run supersedes an older one.
+concurrency:
+  group: snake-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   generate:
@@ -30,5 +34,14 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
+          commit_message: "chore(snake): regenerate contribution grid [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Summary
+        run: |
+          echo "### Snake regenerated :snake:" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Published to the \`output\` branch:" >> "$GITHUB_STEP_SUMMARY"
+          echo "- \`github-contribution-grid-snake-dark.svg\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- \`github-contribution-grid-snake.svg\`" >> "$GITHUB_STEP_SUMMARY"
