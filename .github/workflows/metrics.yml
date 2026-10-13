@@ -42,9 +42,6 @@ jobs:
           base: ""
           config_timezone: Asia/Jakarta
           plugin_habits: yes
-          plugin_habits_charts_type: classic
-          debug: yes
-          use_prebuilt_image: no
           plugin_habits_from: 200
           plugin_habits_days: 14
           plugin_habits_facts: yes
@@ -69,4 +66,3 @@ jobs:
           plugin_languages_details: percentage
           plugin_languages_indepth: yes
           plugin_languages_ignored: html, css, jupyter notebook, scss
-
