@@ -232,6 +232,6 @@ Reusable skills/tools I built and open-sourced.
 <a href="https://www.linkedin.com/in/eggisatria"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="https://github.com/EgiStr?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 
-<sub>Updated 25 Nov 2026, 03:28 WIB</sub>
+<sub>Updated 26 Nov 2026, 02:44 WIB</sub>
 
 </div>
